@@ -139,5 +139,7 @@ Result file contains data in csv format about league, series, match common data,
 </ul>
 </details>
 
+[See result at Kaggle](https://www.kaggle.com/datasets/darianogina/dota-2-matches-pro-leagues)
+
 ## Technology stack
 - GQL ([a GraphQL client for Python 3.7+](https://gql.readthedocs.io/en/stable/)) used with RequestsHTTPTransport
