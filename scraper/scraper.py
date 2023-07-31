@@ -53,6 +53,7 @@ class GQLRunner:
             for field in ("id", "name", "hero_id", "hero", "position", "lane",
                           "role", "kills", "deaths", "assists", "networth"):
                 DATA_FIELDS.append(f"{prefix}_{field}")
+    DATA_FIELDS.append("game_version_id")
 
     def __init__(self):
         url = f"https://api.stratz.com/graphql?key={TOKEN}"
@@ -230,4 +231,5 @@ class GQLRunner:
                     f"{prefix}_assists": player.get("assists"),
                     f"{prefix}_networth": player.get("networth"),
                 })
+        match_data["game_version_id"] = match.get("gameVersionId")
         return match_data

@@ -63,6 +63,7 @@ INIT_DATA_QUERY = """
                         position
                         role
                     }
+                    gameVersionId
                 }
             }
         }
@@ -122,6 +123,7 @@ CUSTOM_DATA_QUERY = """
                     position
                     role
                 }
+                gameVersionId
             }
         }
     }
